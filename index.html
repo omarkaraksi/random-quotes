@@ -30,7 +30,7 @@
 
       p {
         text-align: center;
-        font-size: 67px;
+        font-size: 70px;
         font-weight: bold;
       }
 
@@ -44,6 +44,17 @@
         text-align: center;
         font-size: 40px;
         font-weight: 300;
+      }
+      .quote {
+        position: relative;
+      }
+
+      .quote::before {
+        content: '"'; /* Opening double quote */
+      }
+
+      .quote::after {
+        content: '"'; /* Closing double quote */
       }
     </style>
     <script src="main.js"></script>
@@ -60,7 +71,7 @@
       >
         New Quote
       </button>
-      <p id="quote"></p>
+      <p id="quote" class="quote"></p>
     </div>
   </body>
 </html>
